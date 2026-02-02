@@ -1,71 +1,72 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bank Soal by:Satrio andika</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 15px;
-      background: #f5f6fa;
-    }
-    h1 {
-      text-align: center;
-    }
-    .mapel {
-      background: white;
-      border-radius: 10px;
-      padding: 15px;
-      margin-bottom: 15px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    a {
-      display: block;
-      padding: 8px;
-      margin: 5px 0;
-      background: #3498db;
-      color: white;
-      border-radius: 6px;
-      text-decoration: none;
-      font-size: 14px;
-    }
-    a:hover {
-      background: #2980b9;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank-sat</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Bank Soal</h1>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="bank.html">Soal</a>
+            <a href="#">Upload PDF</a>
+            <a href="tentang.html">Tentang</a>
+        </nav>
+    </header>
 
-<h1>📚 Bank Soal Satrio</h1>
+    <main>
+        <section class="intro">
+            <h2>Selamat datang di Bank-sat</h2>
+            <p>Pilih kategori soal untuk latihan atau klik PDF untuk melihat soal.</p>
+        </section>
 
-<div class="mapel">
-  <h2>PK/PM</h2>
-  <a href="soal/PK.pdf">PK Soal 1</a>
-  <a href="soal/PK PM MIPY #2 2026.docx.pdf">PK Soal 2</a>
-</div>
+        <section class="soal-list">
+            <h2>Daftar Soal</h2>
 
-<div class="mapel">
-  <h2>PBM/PPU</h2>
-  <a href="soal/PBM.pdf">PBM</a>
-  <a href="soal/PPU.pdf">PPU</a>
-</div>
+            <div class="soal-card">
+                <h3>TPS</h3>
+                <div class="dropdown">
+                    <button class="dropbtn">PU/PK/PBM/PPU</button>
+                    <div class="dropdown-content">
+                    
+                    </div>
+                </div>
+            </div>
 
-<div class="mapel">
-  <h2>LBI/LBE</h2>
-  <a href="soal/LBI.pdf">LBI</a>
-  <a href="soal/LBE.pdf">LBE</a>
-</div>
-<div class="mapel">
-    <h2>PU</h2>
-    <a href="soal/PU.pdf">PU</a>
+            <div class="soal-card">
+                <h3>Soal Literasi</h3>
+                <div class="dropdown">
+                    <button class="dropbtn">LBI/LBE/PM</button>
+                    <div class="dropdown-content">
+                    
+                    </div>
+                </div>
+            </div>
 
-  </div>
-  <div class="mapel">
-    <h2>Try out</h2>
-    <a href="soal/inten.pdf">LBI</a>
-    <a href="soal/SOAL TRYOUT-5 PROSUS INTEN (TA 25-26)_251216_082201.pdf">Inten 25</a>
-    <a href="soal/DV121_TS I_SBMPTN TPS .pdf">Neutron</a>
-  </div>
+            <div class="soal-card">
+                <h3>TO TO</h3>
+                <div class="dropdown">
+                    <button class="dropbtn">Try out dari berbagai sumber</button>
+                    <div class="dropdown-content">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="upload">
+            <h2>Upload PDF Soal untuk membantu</h2>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <input type="file" name="pdfFile" accept=".pdf">
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bank Soal. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
